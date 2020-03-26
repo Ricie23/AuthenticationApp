@@ -10,7 +10,7 @@ using MVCDemo.Models;
 
 namespace MVCDemo.Controllers
 {
-    [Authorize]
+    [Authorize (Roles = "Admin, Manager")]
     public class MembershipsController : Controller
     {
         private MemberDBContext db = new MemberDBContext();
